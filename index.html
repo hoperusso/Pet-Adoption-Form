@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adoption Application</title>
+</head>
+<body>
+	<h1 id="title">Pet Adoption Application</h1>
+	<p id="description">Thank you for applying to adopt a pet! Please fill out the form below and submit. We will contact you by email upon approval.</p>
+	<form id="survey-form">
+		<label id="name-label">Applicant Name <input type="name" name="name" id="name" placeholder="Firstname Lastname" required></label>
+		<br>
+		<label id="email-label">Applicant Email <input type="email" name="email" id="email" placeholder="me@furreverhomes.com" required></label>
+		<br>
+		<label id="number-label">Number of Pets Requested <input type="number" id="number" name="number" min="10" max="3" placeholder="1"></label>
+		<br>
+		<label>Preferred Pet Type <select name="pets" id="dropdown">
+			<option value="long-haired cat">Long-haired Cat</option>
+			<option value="short-haired cat">Short-haired Cat</option>
+			<option value="long-haired dog">Long-haired Dog</option>
+			<option value="short-haired dog">Short-haired Dog</option></label>
+		</select>
+		<br>
+		<fieldset>
+        	<legend>What age-range of pet would you prefer?</legend>
+        	<input type="radio" name="pet-age" value="baby">Infant (0-6 months)<br>
+        	<input type="radio" name="pet-age" value="young">Young (6 months - 3 years)<br>
+        	<input type="radio" name="pet-age" value="adult">Adult (3 years - 6 years)<br>
+        	<input type="radio" name="pet-age" value="senior">Senior (6 years+)<br>
+        </fieldset>  
+        <br>
+        <fieldset>      
+        	<legend>Please indicate your willingness to deal with special needs below:</legend>      
+        	<input type="checkbox" name="special-needs" value="any">Any level of need is manageable for me.<br>      
+        	<input type="checkbox" name="special-needs" value="some">A moderate level of need is manageable for me.<br>      
+        	<input type="checkbox" name="special-needs" value="none">No level of special need is manageable for me.<br>       
+     	</fieldset>
+     	<br>
+     	<label>Please list any additional information, questions, or concerns below: 
+     		<br><textarea cols="25" rows="7" placeholder="Additional Information"></textarea></label> 
+     	<br>      
+        	<input type="submit" value="Submit Application" id="submit">     
+	</form>
+</body>
+</html>
